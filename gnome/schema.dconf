@@ -1,0 +1,326 @@
+[Connections]
+first-run=false
+
+[GWeather]
+temperature-unit='centigrade'
+
+[GWeather4]
+temperature-unit='centigrade'
+
+[Weather]
+locations=[<(uint32 2, <('Lyon', 'LFLY', true, [(0.7979063621878385, 0.086393797973719322)], [(0.79848813278740571, 0.084648468721724976)])>)>, <(uint32 2, <('Strasbourg', 'LFST', true, [(0.8473573518432469, 0.13322679375113633)], [(0.84793912244281433, 0.13526301702956053)])>)>]
+
+[boxes]
+first-run=false
+view='icon-view'
+window-maximized=true
+
+[calendar]
+active-view='month'
+window-maximized=false
+window-size=(948, 862)
+
+[control-center]
+last-panel='sharing'
+window-state=(1121, 756, false)
+
+[desktop/app-folders]
+folder-children=['Utilities', 'YaST']
+
+[desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[desktop/input-sources]
+current=uint32 0
+sources=[('xkb', 'us+altgr-intl')]
+xkb-options=@as []
+
+[desktop/interface]
+clock-show-date=true
+color-scheme='default'
+cursor-size=24
+cursor-theme='macOSMonterey'
+document-font-name='New York Medium, 12'
+enable-animations=false
+enable-hot-corners=false
+font-antialiasing='rgba'
+font-hinting='slight'
+font-name='SF Pro Text 12'
+gtk-theme='Adwaita'
+icon-theme='ePapirus'
+monospace-font-name='Iosevka 10'
+overlay-scrolling=1
+text-scaling-factor=1.0
+toolkit-accessibility=false
+
+[desktop/notifications]
+application-children=['org-gnome-terminal', 'org-gnome-nautilus', 'org-gnome-software', 'ulauncher', 'org-freedesktop-problems-applet', 'org-gnome-settings', 'org-gnome-tweaks', 'gnome-network-panel', 'gnome-power-panel', 'org-gnome-calendar', 'org-gnome-extensions', 'org-gnome-boxes']
+
+[desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
+
+[desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[desktop/notifications/application/org-freedesktop-problems-applet]
+application-id='org.freedesktop.problems.applet.desktop'
+
+[desktop/notifications/application/org-gnome-boxes]
+application-id='org.gnome.Boxes.desktop'
+
+[desktop/notifications/application/org-gnome-calendar]
+application-id='org.gnome.Calendar.desktop'
+
+[desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
+
+[desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[desktop/notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
+
+[desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
+
+[desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
+[desktop/notifications/application/ulauncher]
+application-id='ulauncher.desktop'
+
+[desktop/peripherals/mouse]
+natural-scroll=true
+
+[desktop/peripherals/touchpad]
+tap-and-drag=false
+tap-to-click=true
+two-finger-scrolling-enabled=true
+
+[desktop/privacy]
+report-technical-problems=false
+
+[desktop/session]
+idle-delay=uint32 300
+
+[desktop/wm/keybindings]
+move-to-workspace-1=['<Super><Shift>1']
+move-to-workspace-2=['<Super><Shift>2']
+move-to-workspace-3=['<Super><Shift>3']
+move-to-workspace-4=['<Super><Shift>4']
+move-to-workspace-5=['<Super><Shift>5']
+move-to-workspace-6=['<Super><Shift>6']
+move-to-workspace-7=['<Super><Shift>7']
+move-to-workspace-8=['<Super><Shift>8']
+move-to-workspace-9=['<Super><Shift>9']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-5=['<Super>5']
+switch-to-workspace-6=['<Super>6']
+switch-to-workspace-7=['<Super>7']
+switch-to-workspace-8=['<Super>8']
+switch-to-workspace-9=['<Super>9']
+
+[desktop/wm/preferences]
+button-layout='appmenu:close'
+titlebar-font='SF Pro Display Medium 11'
+
+[eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
+
+[evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[login-screen]
+enable-fingerprint-authentication=false
+enable-password-authentication=true
+enable-smartcard-authentication=false
+
+[mutter]
+attach-modal-dialogs=true
+center-new-windows=true
+dynamic-workspaces=false
+edge-tiling=true
+experimental-features=['scale-monitor-framebuffer']
+focus-change-on-pointer-rest=true
+overlay-key=''
+workspaces-only-on-primary=true
+
+[mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
+
+[nautilus/icon-view]
+default-zoom-level='large'
+
+[nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+search-view='list-view'
+show-delete-permanently=false
+show-image-thumbnails='always'
+
+[nautilus/window-state]
+initial-size=(948, 620)
+maximized=false
+sidebar-width=173
+
+[photos]
+window-maximized=false
+window-position=[26, 23]
+window-size=[614, 548]
+
+[settings-daemon/plugins/color]
+night-light-last-coordinates=(45.786698560115191, 4.9588000000000001)
+
+[settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>slash'
+command='ulauncher-toggle'
+name='ULauncher'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Shift><Super>Return'
+command='kitty --single-instance'
+name='Kitty'
+
+[settings-daemon/plugins/power]
+power-button-action='suspend'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+
+[shell]
+app-picker-layout=[{'org.gnome.Contacts.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'com.bitwarden.desktop.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.Photos.desktop': <{'position': <5>}>, 'org.gnome.Totem.desktop': <{'position': <6>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'simple-scan.desktop': <{'position': <9>}>, 'org.gnome.Settings.desktop': <{'position': <10>}>, 'org.gnome.Extensions.desktop': <{'position': <11>}>, 'gnome-system-monitor.desktop': <{'position': <12>}>, 'org.gnome.Boxes.desktop': <{'position': <13>}>, 'org.gnome.Terminal.desktop': <{'position': <14>}>, 'Utilities': <{'position': <15>}>, 'org.fedoraproject.MediaWriter.desktop': <{'position': <16>}>, 'google-chrome.desktop': <{'position': <17>}>, 'kitty.desktop': <{'position': <18>}>, 'org.gnome.Cheese.desktop': <{'position': <19>}>, 'nvim.desktop': <{'position': <20>}>, 'rhythmbox.desktop': <{'position': <21>}>, 'org.gnome.TextEditor.desktop': <{'position': <22>}>, 'org.gnome.Tour.desktop': <{'position': <23>}>}, {'ulauncher.desktop': <{'position': <0>}>}]
+disabled-extensions=['background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['cosmic-workspaces@system76.com', 'pop-shell@system76.com', 'dash-to-dock@micxgx.gmail.com', 'Applications_Menu@rmy.pobox.com', 'Move_Clock@rmy.pobox.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'transparent-top-bar@ftpix.com']
+welcome-dialog-last-shown-version='42.0'
+
+[shell/extensions/appindicator]
+tray-pos='right'
+
+[shell/extensions/auto-move-windows]
+application-list=@as []
+
+[shell/extensions/dash-to-dock]
+apply-custom-theme=false
+background-opacity=0.80000000000000004
+custom-background-color=false
+custom-theme-shrink=true
+dash-max-icon-size=32
+dock-position='BOTTOM'
+extend-height=true
+height-fraction=0.90000000000000002
+hot-keys=false
+icon-size-fixed=false
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+isolate-workspaces=false
+multi-monitor=true
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+require-pressure-to-show=false
+running-indicator-style='DASHES'
+transparency-mode='DYNAMIC'
+
+[shell/extensions/pop-shell]
+activate-launcher=@as []
+active-hint=false
+smart-gaps=false
+snap-to-grid=false
+tile-by-default=true
+toggle-floating=['<Super>space']
+
+[shell/extensions/user-theme]
+name=''
+
+[shell/keybindings]
+switch-monitor=@as []
+switch-to-application-1=@as []
+switch-to-application-2=@as []
+switch-to-application-3=@as []
+switch-to-application-4=@as []
+switch-to-application-5=@as []
+switch-to-application-6=@as []
+switch-to-application-7=@as []
+switch-to-application-8=@as []
+switch-to-application-9=@as []
+toggle-application-view=['<Super>p']
+
+[shell/weather]
+automatic-location=true
+locations=[<(uint32 2, <('Lyon', 'LFLY', true, [(0.7979063621878385, 0.086393797973719322)], [(0.79848813278740571, 0.084648468721724976)])>)>, <(uint32 2, <('Strasbourg', 'LFST', true, [(0.8473573518432469, 0.13322679375113633)], [(0.84793912244281433, 0.13526301702956053)])>)>]
+
+[shell/world-clocks]
+locations=@av []
+
+[software]
+check-timestamp=int64 1652603783
+first-run=false
+install-timestamp=int64 1652515764
+online-updates-timestamp=int64 1652515723
+update-notification-timestamp=int64 1652515849
+
+[system/location]
+enabled=true
+
+[terminal/legacy]
+theme-variant='system'
+
+[terminal/legacy/profiles:]
+list=['2a755390-de28-4449-9ee8-94b7c024b1dc', '1a548d94-7af4-40aa-b8af-3f6b08034a6c']
+
+[terminal/legacy/profiles:/:1a548d94-7af4-40aa-b8af-3f6b08034a6c]
+audible-bell=false
+background-color='#1d1f21'
+bold-color='#c5c8c6'
+bold-color-same-as-fg=true
+cursor-background-color='#c5c8c6'
+cursor-colors-set=true
+cursor-foreground-color='#1d1f21'
+font='Iosevka 12'
+foreground-color='#c5c8c6'
+palette=['#1d1f21', '#cc6666', '#b5bd68', '#f0c674', '#81a2be', '#b294bb', '#8abeb7', '#c5c8c6', '#969896', '#cc6666', '#b5bd68', '#f0c674', '#81a2be', '#b294bb', '#8abeb7', '#ffffff']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+visible-name='Base 16 Tomorrow Night 256'
+
+[terminal/legacy/profiles:/:2a755390-de28-4449-9ee8-94b7c024b1dc]
+audible-bell=false
+background-color='#ffffff'
+bold-color='#4d4d4c'
+bold-color-same-as-fg=true
+cursor-background-color='#4d4d4c'
+cursor-colors-set=true
+cursor-foreground-color='#ffffff'
+font='Iosevka 12'
+foreground-color='#4d4d4c'
+palette=['#ffffff', '#c82829', '#718c00', '#eab700', '#4271ae', '#8959a8', '#3e999f', '#4d4d4c', '#8e908c', '#f5871f', '#e0e0e0', '#d6d6d6', '#969896', '#282a2e', '#a3685a', '#1d1f21']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+visible-name='Base 16 Tomorrow'
+
+[terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+audible-bell=false
+font='Iosevka 12'
+use-system-font=false
+
+[tweaks]
+show-extensions-notice=false

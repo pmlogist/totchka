@@ -1,0 +1,67 @@
+[/]
+app-picker-layout=[{'org.gnome.Contacts.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'com.bitwarden.desktop.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.Photos.desktop': <{'position': <5>}>, 'org.gnome.Totem.desktop': <{'position': <6>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'simple-scan.desktop': <{'position': <9>}>, 'org.gnome.Settings.desktop': <{'position': <10>}>, 'org.gnome.Extensions.desktop': <{'position': <11>}>, 'gnome-system-monitor.desktop': <{'position': <12>}>, 'org.gnome.Boxes.desktop': <{'position': <13>}>, 'org.gnome.Terminal.desktop': <{'position': <14>}>, 'Utilities': <{'position': <15>}>, 'org.fedoraproject.MediaWriter.desktop': <{'position': <16>}>, 'google-chrome.desktop': <{'position': <17>}>, 'kitty.desktop': <{'position': <18>}>, 'org.gnome.Cheese.desktop': <{'position': <19>}>, 'nvim.desktop': <{'position': <20>}>, 'rhythmbox.desktop': <{'position': <21>}>, 'org.gnome.TextEditor.desktop': <{'position': <22>}>, 'org.gnome.Tour.desktop': <{'position': <23>}>}, {'ulauncher.desktop': <{'position': <0>}>, 'mozilla-thunderbird.desktop': <{'position': <1>}>, 'obinskit.desktop': <{'position': <2>}>}]
+disabled-extensions=['background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com', 'Applications_Menu@rmy.pobox.com']
+enabled-extensions=['cosmic-workspaces@system76.com', 'pop-shell@system76.com', 'dash-to-dock@micxgx.gmail.com', 'Move_Clock@rmy.pobox.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'transparent-top-bar@ftpix.com', 'Hide_Activities@shay.shayel.org']
+favorite-apps=['firefox.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'com.bitwarden.desktop.desktop', 'kitty.desktop']
+welcome-dialog-last-shown-version='42.0'
+
+[extensions/appindicator]
+tray-pos='right'
+
+[extensions/auto-move-windows]
+application-list=@as []
+
+[extensions/dash-to-dock]
+animation-time=1.3877787807814457e-17
+apply-custom-theme=false
+background-opacity=0.80000000000000004
+custom-background-color=false
+custom-theme-shrink=true
+dash-max-icon-size=32
+dock-fixed=false
+dock-position='BOTTOM'
+extend-height=false
+height-fraction=0.90000000000000002
+hide-delay=1.3877787807814457e-17
+hot-keys=false
+icon-size-fixed=false
+intellihide-mode='ALL_WINDOWS'
+isolate-workspaces=false
+multi-monitor=true
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+require-pressure-to-show=false
+running-indicator-style='DASHES'
+show-delay=1.3877787807814457e-17
+transparency-mode='DYNAMIC'
+
+[extensions/pop-shell]
+activate-launcher=@as []
+active-hint=false
+smart-gaps=false
+snap-to-grid=false
+tile-by-default=true
+toggle-floating=['<Super>space']
+
+[extensions/user-theme]
+name=''
+
+[keybindings]
+switch-monitor=@as []
+switch-to-application-1=@as []
+switch-to-application-2=@as []
+switch-to-application-3=@as []
+switch-to-application-4=@as []
+switch-to-application-5=@as []
+switch-to-application-6=@as []
+switch-to-application-7=@as []
+switch-to-application-8=@as []
+switch-to-application-9=@as []
+toggle-application-view=['<Super>p']
+
+[weather]
+automatic-location=true
+locations=[<(uint32 2, <('Lyon', 'LFLY', true, [(0.7979063621878385, 0.086393797973719322)], [(0.79848813278740571, 0.084648468721724976)])>)>, <(uint32 2, <('Strasbourg', 'LFST', true, [(0.8473573518432469, 0.13322679375113633)], [(0.84793912244281433, 0.13526301702956053)])>)>]
+
+[world-clocks]
+locations=@av []

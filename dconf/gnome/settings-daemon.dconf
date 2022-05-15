@@ -1,0 +1,20 @@
+[plugins/color]
+night-light-last-coordinates=(48.467830780057596, 7.4983801999999997)
+
+[plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+
+[plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>slash'
+command='ulauncher-toggle'
+name='ULauncher'
+
+[plugins/media-keys/custom-keybindings/custom1]
+binding='<Shift><Super>Return'
+command='kitty --single-instance'
+name='Kitty'
+
+[plugins/power]
+power-button-action='suspend'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'

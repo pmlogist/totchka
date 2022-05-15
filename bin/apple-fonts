@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+import os
+from urllib.request import urlretrieve
+
+urls = (
+    "https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg",
+    "https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg",
+    "https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg",
+    "https://devimages-cdn.apple.com/design/resources/download/NY.dmg",
+)
+
+for url in urls:
+    filename = url.split("/")[-1]
+
+    if not os.path.exists(filename):
+        print(f"Downloading: {filename}")
+        urlretrieve(url, filename)
+    else:
+        print(f"Using already downloaded {filename}")
+
+    font_dirname = f"{filename.replace('-', '').split('.')[0]}Fonts"
+
+    os.system(f"7z x {filename} -aoa >/dev/null")
+    os.system(f"7z x {font_dirname}/*.pkg -aoa 2>/dev/null")
+    os.system(f"7z x Payload~ -aoa >/dev/null")
+    os.system("sudo mv Library/Fonts/*otf /usr/share/fonts")
+    os.system(f"rm -rf {font_dirname} Payload~")

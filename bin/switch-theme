@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+CURRENT_GTK_THEME="$(dconf read /org/gnome/desktop/interface/color-scheme)"
+
+if [ $CURRENT_GTK_THEME == "'prefer-dark'" ]
+then
+  dconf write /org/gnome/desktop/interface/color-scheme '"default"';
+  dconf write /org/gnome/desktop/interface/gtk-theme '"Adwaita"';
+  kitty @ set-colors -a -c $HOME/.config/kitty/themes/tomorrow.conf;
+else
+  dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"';
+  dconf write /org/gnome/desktop/interface/gtk-theme '"Adwaita-dark"';
+  kitty @ set-colors -a -c $HOME/.config/kitty/themes/tomorrow-night.conf;
+fi
+

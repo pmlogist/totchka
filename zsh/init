@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+
+links=(
+  'https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg'
+  'https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg'
+  'https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg'
+  'https://devimages-cdn.apple.com/design/resources/download/NY.dmg'
+)
+
+for i in ${links[@]}
+do
+  curl -OJL $i | unpack
+done
+;;

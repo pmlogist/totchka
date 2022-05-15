@@ -1,0 +1,7 @@
+[user]
+	email = 42704376+pmlogist@users.noreply.github.com
+	name = pmlogist
+[core]
+	editor = nvim --wait
+[init]
+	defaultBranch = main

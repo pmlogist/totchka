@@ -1,0 +1,14 @@
+[icon-view]
+default-zoom-level='large'
+
+[preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+search-view='list-view'
+show-delete-permanently=false
+show-image-thumbnails='always'
+
+[window-state]
+initial-size=(948, 620)
+maximized=false
+sidebar-width=173
