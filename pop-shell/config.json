@@ -49,6 +49,12 @@
     },
     {
       "class": "discord"
+    },
+    {
+      "class": "Insomnia"
+    },
+    {
+      "class": "totem"
     }
   ],
   "skiptaskbarhidden": [],
