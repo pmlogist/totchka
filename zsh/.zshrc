@@ -3,8 +3,8 @@ typeset -U path cdpath fpath manpath
 bindkey -v
 
 export DIRENV_LOG_FORMAT=""
-export GOBIN="$GOPATH/bin"
 export GOPATH="$HOME/.go"
+export GOBIN="$GOPATH/bin"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="underline"
 
 export BINPATH="$HOME/.bin"
@@ -105,3 +105,7 @@ hash -d projects="$HOME/Workspace/pmlogist"
 
 eval "$(direnv hook zsh)"
 
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
