@@ -55,6 +55,13 @@
     },
     {
       "class": "totem"
+    },
+    {
+      "class": "whatsapp-for-linux"
+    },
+    {
+      "class": "evolution",
+      "title": "Compose Message"
     }
   ],
   "skiptaskbarhidden": [],
