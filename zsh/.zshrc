@@ -20,6 +20,8 @@ path+="$HOME/.config/zsh/plugins/zsh-completions"
 fpath+="$HOME/.config/zsh/plugins/zsh-completions"
 path+="$HOME/.config/zsh/plugins/zsh-history-substring-search"
 fpath+="$HOME/.config/zsh/plugins/zsh-history-substring-search"
+path+="$HOME/.config/zsh/plugins/zsh-autosuggestions"
+fpath+="$HOME/.config/zsh/plugins/zsh-autosuggestions"
 path+="$HOME/.config/zsh/completions/docker"
 fpath+="$HOME/.config/zsh/completions/docker"
 path+="$HOME/.config/zsh/completions/nix-zsh-completions"
@@ -40,7 +42,9 @@ fi
 if [[ -f "$HOME/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh" ]]; then
   source "$HOME/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh"
 fi
-
+if [[ -f "$HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
+  source "$HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+fi
 
 HISTSIZE="50000"
 SAVEHIST="50000"
