@@ -5,11 +5,16 @@ bindkey -v
 export DIRENV_LOG_FORMAT=""
 export GOPATH="$HOME/.go"
 export GOBIN="$GOPATH/bin"
+export VOLTA_HOME="$HOME/.volta"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="underline"
+source /home/pmlogist/.gvm/scripts/gvm
+source $HOME/.cargo/env
+export PATH="$HOME/.cargo/bin:$PATH"
 
 export BINPATH="$HOME/.bin"
 export PATH=$BINPATH:$PATH
 export PATH=$GOBIN:$PATH
+export PATH=$VOLTA_HOME/bin:$PATH
 export PATH=$HOME/.cache/npm-packages/bin:$PATH
 export NODE_PATH=$HOME/.cache/npm-packages/lib/node_modules
 export PATH=$HOME/.cargo/bin:$PATH
