@@ -3,13 +3,18 @@ typeset -U path cdpath fpath manpath
 bindkey -v
 
 export DIRENV_LOG_FORMAT=""
-export GOPATH="$HOME/.go"
-export GOBIN="$GOPATH/bin"
 export VOLTA_HOME="$HOME/.volta"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="underline"
-source /home/pmlogist/.gvm/scripts/gvm
-source $HOME/.cargo/env
-export PATH="$HOME/.cargo/bin:$PATH"
+
+if [[ -d "$HOME/.cargo" ]]; then
+  source $HOME/.cargo/env
+  export PATH="$HOME/.cargo/bin:$PATH"
+fi
+if [[ -d "$HOME/.gvm" ]]; then
+  source $HOME/.gvm/scripts/gvm
+  export GOPATH="$HOME/.go"
+  export GOBIN="$GOPATH/bin"
+fi
 
 export BINPATH="$HOME/.bin"
 export PATH=$BINPATH:$PATH
@@ -31,12 +36,7 @@ path+="$HOME/.config/zsh/completions/docker"
 fpath+="$HOME/.config/zsh/completions/docker"
 path+="$HOME/.config/zsh/completions/nix-zsh-completions"
 fpath+="$HOME/.config/zsh/completions/nix-zsh-completions"
-source "/usr/share/fzf/shell/key-bindings.zsh"
 
-# Oh-My-Zsh/Prezto calls compinit during initialization,
-# calling it twice causes slight start up slowdown
-# as all $fpath entries will be traversed again.
-autoload -U compinit && compinit
 
 if [[ -f "$HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh" ]]; then
   source "$HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
@@ -50,11 +50,21 @@ fi
 if [[ -f "$HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
   source "$HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 fi
+if [[ -d "/usr/share/fzf" ]]; then
+  source "/usr/share/fzf/shell/key-bindings.zsh"
+fi
+if [[ -d "/usr/local/Cellar/fzf" ]]; then
+  source "/usr/local/Cellar/fzf/0.30.0/shell/key-bindings.zsh"
+  path+="/usr/local/Cellar/fzf/0.30.0/shell/completion.zsh"
+  fpath+="/usr/local/Cellar/fzf/0.30.0/shell/completion.zsh"
+fi
+
+autoload -U compinit && compinit
 
 HISTSIZE="50000"
 SAVEHIST="50000"
 
-HISTFILE="/home/pmlogist/.local/share/zsh/zsh_history"
+HISTFILE="$HOME/.local/share/zsh/zsh_history"
 mkdir -p "$(dirname "$HISTFILE")"
 
 setopt AUTO_CD              # Go to folder path without using cd.
@@ -109,6 +119,7 @@ hash -d dls="$HOME/Downloads"
 hash -d docs="$HOME/Docs"
 hash -d enclosure="$HOME/Workspace/enclosure"
 hash -d kozea="$HOME/Workspace/kozea"
+hash -d kvadra="$HOME/Workspace/kvadra"
 hash -d music="$HOME/Music"
 hash -d projects="$HOME/Workspace/pmlogist"
 
@@ -117,4 +128,4 @@ eval "$(direnv hook zsh)"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+export PATH="/usr/local/sbin:$PATH"
