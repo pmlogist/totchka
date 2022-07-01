@@ -16,6 +16,11 @@ if [[ -d "$HOME/.gvm" ]]; then
   export GOBIN="$GOPATH/bin"
 fi
 
+if [[ -d "$HOME/.local/bin" ]]; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+
+
 export BINPATH="$HOME/.bin"
 export PATH=$BINPATH:$PATH
 export PATH=$GOBIN:$PATH
